@@ -1,0 +1,42 @@
+.cell {
+    display: grid;
+    height: 300px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 10px;
+    grid-template-rows: 50px 1fr;
+}
+
+.cell .name {
+    display: grid;
+    grid-row: 1;
+    align-items: center;
+    justify-items: center;
+}
+
+.cell .content {
+    display: grid;
+    grid-row: 2;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 110%;
+    height: auto;
+    width: 100%;
+    justify-self: center;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.cell p {
+    display: none;
+    padding: 10px;
+}
+
+.cell:hover p {
+    display: block;
+    color: rgb(255, 255, 255);
+}
+
+.cell:hover .content {
+    background-color: rgba(114, 34, 34, 0.753);
+    background-blend-mode: multiply;
+}

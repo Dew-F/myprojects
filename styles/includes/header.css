@@ -1,0 +1,46 @@
+header {
+    display: grid;
+    position: sticky;
+    grid-row: 1;
+    grid-column: 1;
+    top: -45px;
+    background-color: lightgray;
+}
+
+header nav {
+    display: grid;
+    grid-row: 1;
+    padding: 2px 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+	justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+}
+
+header nav ul li {
+    padding: 0px 4px;
+}
+
+header li {
+    display: grid;
+    border: 1px solid rgba(255, 255, 255, 0.541);
+    background-color:lightslategray;
+    padding: 10px;
+    color: white;
+    height: 50px;
+    width: 100px;
+    align-items: center;
+    justify-items: center;
+}
+
+header li:not(:last-child) {
+    border-right: none;
+}
+
+header a {
+    height: 100%;
+}

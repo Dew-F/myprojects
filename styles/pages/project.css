@@ -1,0 +1,21 @@
+.project-box .name {
+    display: grid;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.project-box .name p {
+    padding: 10px 0px; 
+}
+
+.project-box {
+    font-size: 18px;
+}
+
+.project-box img {
+    display: block;
+    margin: auto;
+}

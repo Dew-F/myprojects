@@ -1,0 +1,59 @@
+#menubutton {
+    display: grid;
+    grid-row: 1;
+    grid-column: 1;
+    position: sticky;
+    top: 0px;
+    width: 200px;
+    height: 80px;
+    justify-self: center;
+    border-right: 40px solid transparent;
+    border-left: 40px solid transparent;
+    border-top: 50px solid gray;
+    z-index: 1;
+}
+
+#menubutton > div {
+    display: grid;
+    position: sticky;
+    top: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    justify-self: center;
+    width: 100px;
+    text-align: center;
+    margin-top: -40px;
+}
+
+#menubutton div div hr {
+    border-color: lightgray;
+}
+
+#menubutton div div {
+    display: grid;
+    position: sticky;
+    line-height: 2px;
+    top: 36px;
+}
+
+.menuhidden {
+    top: 0px;
+}
+
+.menuopen {
+    top: -45px;
+}
+
+@media (max-width: 600px) {
+    #menubutton {
+        margin-top: 45px;
+    }
+
+    .button-on-menuhidden {
+        top: 45px !important;
+    }
+
+    .button-on-menuopen {
+        top: 0px !important;
+    }
+}

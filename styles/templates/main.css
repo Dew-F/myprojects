@@ -1,0 +1,12 @@
+main {
+    display: grid;
+    background-color: white;
+    padding: 5px 20px;
+}
+
+
+@media (max-width: 600px) {
+    main {
+        padding: 50px 20px;
+    }
+}
